@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070611" />
+  <title>For Alishba — Letter</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/background.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <canvas id="motionCanvas" aria-hidden="true"></canvas>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <span class="aurora aurora-one"></span>
+    <span class="aurora aurora-two"></span>
+    <span class="noise"></span>
+    <span class="moving-grid"></span>
+  </div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="preloader" id="preloader">
+    <div class="preloader-ring"></div>
+    <p>Loading something softer</p>
+  </div>
+
+
+<header class="site-header">
+  <a class="logo magnetic" href="index.html">F → A</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="memories.html">Memories</a>
+    <a href="realization.html">Realization</a>
+    <a href="apology.html">Apology</a>
+    <a href="letter.html">Letter</a>
+  </nav>
+</header>
+
+
+<main>
+  <section class="page inner-page">
+    <div class="choice-card glass reveal">
+      <p class="eyebrow">Only when you are ready</p>
+      <h1 class="page-title">What does your heart need right now?</h1>
+      <p class="page-copy">
+        No drama. No public performance. Just one honest moment between us.
+      </p>
+
+      <div class="choice-actions">
+        <button class="btn btn-primary magnetic" id="stayButton">I want to stay and talk calmly</button>
+        <button class="btn btn-ghost magnetic" id="spaceButton">I need space right now</button>
+      </div>
+
+      <div class="choice-response" id="spaceResponse">
+        I understand. I will not turn my pain into pressure. I will respect your space,
+        and my apology will remain here quietly whenever your heart feels ready.
+      </div>
+    </div>
+
+    <div class="letter-stage" id="letterStage">
+      <div class="envelope-wrap" id="envelopeWrap">
+        <button class="envelope" id="envelopeButton" aria-label="Open the ribbon letter">
+          <span class="envelope-base"></span>
+          <span class="envelope-flap"></span>
+          <span class="ribbon-lock"></span>
+        </button>
+        <p>Open the ribbon</p>
+      </div>
+
+      <article class="paper-letter" id="paperLetter">
+        <div class="paper-cap top"></div>
+        <div class="paper-body">
+          <h2>My Alishba</h2>
+
+          <p>
+            You have a softness that stays in my heart even when the day becomes heavy.
+            From the first quiet memory of a corridor to the conversations that became part of my routine,
+            you became more than a feeling. You became a prayer I carry with care.
+          </p>
+
+          <p>
+            I admire your innocence, your moods, your shyness, your little reactions,
+            and even the stubbornness that somehow still feels precious when it belongs to you.
+            You turn simple things into memories — a word, a reply, a small joke, a quiet moment,
+            a photograph, a prayer.
+          </p>
+
+          <p>
+            I am not asking you to forget what hurt you. I am asking for the chance to become gentler,
+            wiser, and more deserving of the love I ask from you. If I ask for affection,
+            I must give affection first. If I ask for softness, I must speak with softness first.
+          </p>
+
+          <p>
+            You are precious to me in a way I should protect with patience, not damage with anger.
+            I choose you with respect, with care, and with the sincere dua that Allah keeps our hearts
+            clean, loyal, and close.
+          </p>
+
+          <p class="paper-signature">— Faisal</p>
+        </div>
+        <div class="paper-cap bottom"></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <p>Private. Respectful. Written to apologize, not to pressure.</p>
+</footer>
+
+
+  <script src="js/background.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
