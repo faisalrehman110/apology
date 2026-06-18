@@ -1,0 +1,4 @@
+Notes:
+- This version uses real separate HTML pages instead of rendering everything into one index page.
+- The home heading is written directly in index.html as: For Alishba.
+- The animations are still modular through shared CSS and JS files.
