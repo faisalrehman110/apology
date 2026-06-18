@@ -1,0 +1,77 @@
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { min-height: 440px; }
+  .memory-grid { grid-template-columns: repeat(2, 1fr); }
+  .memory-card { min-height: 300px; }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    top: 10px;
+    border-radius: 24px;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    max-width: calc(100% - 62px);
+  }
+
+  .site-nav a {
+    padding: 12px 12px;
+    font-size: .82rem;
+  }
+
+  .page {
+    width: min(100% - 24px, var(--max));
+    padding-top: 116px;
+  }
+
+  .hero-title.fixed-title {
+    font-size: clamp(3.4rem, 15vw, 5.7rem);
+    line-height: .96;
+    letter-spacing: -.06em;
+  }
+
+  .hero-title.fixed-title span {
+    margin-right: .10em;
+  }
+
+  .hero-actions,
+  .next-actions,
+  .choice-actions {
+    display: grid;
+  }
+
+  .btn { width: 100%; }
+
+  .hero-visual { min-height: 360px; }
+  .glass-card { min-height: 390px; }
+  .glass-card h2 { margin-bottom: 55px; }
+
+  .memory-grid { grid-template-columns: 1fr; }
+
+  .timeline { padding-left: 0; }
+  .timeline-line { left: 21px; }
+  .timeline-item { gap: 12px; }
+  .timeline-dot { width: 42px; height: 42px; }
+
+  .apology-card,
+  .choice-card {
+    border-radius: 30px;
+  }
+
+  .envelope { height: 245px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  #motionCanvas { display: none; }
+}

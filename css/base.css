@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap");
+
+:root {
+  --bg: #070611;
+  --bg2: #100916;
+  --text: #fff8f1;
+  --muted: rgba(255,248,241,.72);
+  --dim: rgba(255,248,241,.52);
+  --line: rgba(255,255,255,.16);
+  --line2: rgba(255,220,232,.42);
+  --panel: rgba(255,255,255,.075);
+  --panel2: rgba(255,255,255,.12);
+  --rose: #ff9fbd;
+  --gold: #f2d397;
+  --violet: #9a82ff;
+  --paper: #fff0cd;
+  --ink: #44291d;
+  --shadow: 0 32px 95px rgba(0,0,0,.48);
+  --max: 1180px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; background: var(--bg); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 12%, rgba(255,159,189,.15), transparent 34rem),
+    radial-gradient(circle at 80% 35%, rgba(154,130,255,.12), transparent 32rem),
+    linear-gradient(145deg, #05040c, var(--bg) 46%, var(--bg2));
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+body.loaded .preloader {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.02);
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+p, h1, h2, h3 { margin-top: 0; }
+
+::selection {
+  background: rgba(255,159,189,.35);
+  color: #fff;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 18px;
+  background: #070611;
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.preloader-ring {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.16);
+  border-top-color: var(--rose);
+  border-right-color: var(--gold);
+  animation: spin 1.1s linear infinite;
+}
+
+.preloader p {
+  color: var(--muted);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: .72rem;
+}
+
+.glass {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.045)),
+    rgba(255,255,255,.035);
+  backdrop-filter: blur(22px);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: .74rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
